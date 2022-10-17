@@ -50,5 +50,7 @@ wakelock_use(hal_camera_default)
 get_prop(hal_camera_default, exported_camera_prop)
 set_prop(hal_camera_default, vendor_camera_prop)
 
+hal_client_domain(hal_camera_default, hal_graphics_allocator)
+
 # Libexynoscamera3 wants to read ro.factory.factory_binary which is not properly namespaced
 dontaudit hal_camera_default default_prop:file read;
