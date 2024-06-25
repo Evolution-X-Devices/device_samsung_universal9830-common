@@ -372,6 +372,7 @@ PRODUCT_PACKAGES += \
     teegris_v4.rc
 
 # Update
+AB_OTA_UPDATER := false
 PRODUCT_SOONG_NAMESPACES += bootable/deprecated-ota
 
 # USB
