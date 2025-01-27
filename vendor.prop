@@ -4,7 +4,6 @@ aaudio.mmap_policy=2
 aaudio.mmap_exclusive_policy=2
 audio.offload.min.duration.secs=30
 af.fast_track_multiplier=1
-ro.hardware.audio.primary=exynos990
 
 # Bluetooth
 bluetooth.device.class_of_device=90,2,12

@@ -34,15 +34,15 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 BOARD_LOW_LATENCY_CAPTURE_DURATION := 20
 BOARD_USB_PLAYBACK_DURATION := 5
 BOARD_USE_MMAP_HW_VOLUME_CONTROL := true
-BOARD_USE_QUAD_MIC := true
-BOARD_USE_SEC_AUDIO_DYNAMIC_NREC := true
-BOARD_USE_SEC_AUDIO_PARAM_UPDATE := false
-BOARD_USE_SEC_AUDIO_RESAMPLER := true
-BOARD_USE_SEC_AUDIO_SAMSUNGRECORD := true
-BOARD_USE_SEC_AUDIO_SOUND_TRIGGER_ENABLED := true
-# BOARD_USE_SEC_AUDIO_SUPPORT_GAMECHAT_SPK_AEC := true
-BOARD_USE_SEC_AUDIO_SUPPORT_LISTENBACK_DSPEFFECT := true
-BOARD_USE_USB_OFFLOAD := true
+$(call soong_config_set,exynos_audio,PROXY_LIBRARY,//device/samsung/universal9830-common:libaudioproxy)
+$(call soong_config_set,universal9830AudioVars,use_sec_audio_dynamic_nrec,true)
+$(call soong_config_set,universal9830AudioVars,use_sec_audio_param_update,false)
+$(call soong_config_set,universal9830AudioVars,use_sec_audio_resampler,true)
+$(call soong_config_set,universal9830AudioVars,use_sec_audio_samsungrecord,true)
+$(call soong_config_set,universal9830AudioVars,use_sec_audio_sound_trigger_enabled,true)
+$(call soong_config_set,universal9830AudioVars,use_sec_audio_support_listenback_dspeffect,true)
+$(call soong_config_set,universal9830AudioVars,use_soundtrigger_hal,true)
+$(call soong_config_set,universal9830AudioVars,use_usb_offload,true)
 
 # Camera
 $(call soong_config_set,samsungCameraVars,usage_64bit,true)

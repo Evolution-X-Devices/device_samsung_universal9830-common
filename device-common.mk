@@ -27,7 +27,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.service \
     android.hardware.bluetooth.audio-impl \
     audio.bluetooth.default \
-    audio.primary.exynos990 \
+    audio.primary.universal990 \
     audio.r_submix.default \
     SamsungDAP
 
@@ -343,7 +343,8 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
     hardware/google/pixel \
     hardware/samsung \
-    hardware/samsung_slsi-linaro/exynos/gralloc/gralloc3
+    hardware/samsung_slsi-linaro/exynos/gralloc/gralloc3 \
+    hardware/samsung_slsi-linaro/exynos/libaudio/audiohal
 
 # SoundTrigger
 PRODUCT_PACKAGES += \
