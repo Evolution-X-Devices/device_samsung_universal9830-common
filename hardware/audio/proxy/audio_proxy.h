@@ -215,7 +215,7 @@ struct audio_proxy
     int (*sound_trigger_close_for_streaming)(int);
     int (*sound_trigger_open_recording)();
     size_t (*sound_trigger_read_recording_samples)(void*, size_t);
-    int (*sound_trigger_close_recording)();
+    int (*sound_trigger_close_recording)(int handle);
 
     int (*sound_trigger_headset_status)(int);
     int (*sound_trigger_voicecall_status)(int);
