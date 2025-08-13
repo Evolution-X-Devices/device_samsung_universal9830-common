@@ -460,8 +460,8 @@ on init
    # Allow system processes to read / write power state.
    chmod 0660 /sys/power/wakeup_count
 
-   # Fastcharge switch
-   chown system radio /sys/class/sec/switch/afc_disable
+# AFC permissions for fast charge
+    chown system radio /sys/class/sec/switch/afc_disable
 
     # ZRAM setup
     write /proc/sys/vm/page-cluster 0

@@ -222,10 +222,13 @@
     </hal>
     <hal format="aidl">
         <name>vendor.lineage.touch</name>
-        <transport>hwbinder</transport>
         <version>1</version>
         <interface>
             <name>IGloveMode</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IHighTouchPollingRate</name>
             <instance>default</instance>
         </interface>
         <interface>

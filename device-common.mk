@@ -87,10 +87,6 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += \
     fastbootd
 
-# FastCharge
-PRODUCT_PACKAGES += \
-    vendor.lineage.fastcharge@1.0-service.samsung
-
 # Fingerprint
 PRODUCT_PACKAGES += \
     init.udfps.rc
@@ -369,7 +365,7 @@ PRODUCT_COPY_FILES += \
 
 # Touch features
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.universal9830
+    vendor.lineage.touch-service.samsung
 
 # TUI
 PRODUCT_PACKAGES += \

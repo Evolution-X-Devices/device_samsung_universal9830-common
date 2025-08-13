@@ -133,6 +133,9 @@ $(call soong_config_set,lineage_health,charging_control_charging_disabled,0)
 $(call soong_config_set,lineage_health,charging_control_charging_bypass,true)
 $(call soong_config_set,lineage_health,charging_control_charging_toggle,true)
 $(call soong_config_set,lineage_health,charging_control_charging_deadline,false)
+$(call soong_config_set,lineage_health,fast_charge_node,/sys/class/sec/switch/afc_disable)
+$(call soong_config_set,lineage_health,fast_charge_value_none,1)
+$(call soong_config_set,lineage_health,fast_charge_value_fast_charge,0)
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 61865984
