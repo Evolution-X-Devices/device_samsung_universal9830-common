@@ -341,7 +341,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/samsung \
     hardware/samsung_slsi-linaro/exynos/gralloc/gralloc3 \
     hardware/samsung_slsi-linaro/exynos/libaudio/sthal \
-    hardware/samsung_slsi-linaro/exynos/libaudio/audiohal
+    hardware/samsung_slsi-linaro/exynos/libaudio/audiohal_comv1
 
 # SoundTrigger
 PRODUCT_PACKAGES += \
